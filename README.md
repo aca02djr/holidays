@@ -1,5 +1,5 @@
 # holidays
-Golang package to provide functions for calculating bank holidays in England &amp; Wales. Current tests only cover 2010-2016.
+Golang package to provide functions for calculating bank holidays in England &amp; Wales. Current tests only cover 2010-2018.
 
 ## Installation
 ```
