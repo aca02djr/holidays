@@ -124,7 +124,7 @@ func easterSunday(year int) time.Time {
 	return time.Date(year, time.Month(month), day, 0, 0, 0, 0, time.Local)
 }
 
-// Calculate the first occurence of the given weekday in the given month/year
+// Calculate the first occurrence of the given weekday in the given month/year
 func firstOfMonth(year int, month time.Month, weekday time.Weekday) time.Time {
 	d := time.Date(year, month, 1, 0, 0, 0, 0, time.Local)
 	diff := int(weekday - d.Weekday())
@@ -134,7 +134,7 @@ func firstOfMonth(year int, month time.Month, weekday time.Weekday) time.Time {
 	return d.AddDate(0, 0, diff)
 }
 
-// Calculate the last occurence of the given weekday in the given month/year
+// Calculate the last occurrence of the given weekday in the given month/year
 func lastOfMonth(year int, month time.Month, weekday time.Weekday) time.Time {
 	d := time.Date(year, month+1, 1, 0, 0, 0, 0, time.Local)
 	diff := int(weekday - d.Weekday())
