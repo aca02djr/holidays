@@ -101,6 +101,26 @@ func TestForYear(t *testing.T) {
 			time.Date(2018, time.December, 25, 0, 0, 0, 0, time.Local),
 			time.Date(2018, time.December, 26, 0, 0, 0, 0, time.Local),
 		}},
+		{2019, []time.Time{
+			time.Date(2019, time.January, 1, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.April, 19, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.April, 22, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.May, 6, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.May, 27, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.August, 26, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.December, 25, 0, 0, 0, 0, time.Local),
+			time.Date(2019, time.December, 26, 0, 0, 0, 0, time.Local),
+		}},
+		{2020, []time.Time{
+			time.Date(2020, time.January, 1, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.April, 10, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.April, 13, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.May, 4, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.May, 25, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.August, 31, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.December, 25, 0, 0, 0, 0, time.Local),
+			time.Date(2020, time.December, 28, 0, 0, 0, 0, time.Local),
+		}},
 	}
 
 	for _, test := range tests {
